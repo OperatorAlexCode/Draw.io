@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Drawing</title>
+</head>
+
+<body>
+    <h1 style="margin: 16px 8px;">Draw.io</h1>
+    <div class="row">
+        <div class="options">
+            <!--Color inputs-->
+            <div class="column option">
+                <label for="colorInp">Color</label>
+                <input type="text" id="colorInp" placeholder="hexcode" autocomplete="off">
+            </div>
+            <!--Grid inputs-->
+            <div class="column option">
+                <label for="sizeInp">Height</label>
+                <input type="text" id="heightInp" placeholder="Height">
+                <label for="sizeInp">Width</label>
+                <input type="text" id="widthInp" placeholder="Width">
+                <button id="changeBtn">Change</button>
+            </div>
+            <!--Cell inputs-->
+            <div class="column option">
+                <label for="sizeInp">Cell size</label>
+                <input type="text" id="cellSize" placeholder="Size">
+                <button id="changeBtnSize">Change</button>
+            </div>
+            <!--Preseve input-->
+            <div class="row option">
+                <input id="preserve" type="checkbox" autocomplete="off">
+                <label for="preserve">Preserve Canvas</label>
+            </div>
+            <!--Export-->
+            <div class="column option">
+                <input type="text" id="nameInp" placeholder="name" autocomplete="off">
+                <button id="exportBtn">Export</button>
+            </div>
+            <!--Import-->
+            <div class="column option">
+                <button id="importBtn">Import</button>
+                <input type="file" id="ghost" style="display: none;">
+            </div>
+        </div>
+        <div>
+            <table id="canvas"></table>
+        </div>
+    </div>
+    <script src="js/FileSaver.js"></script>
+    <script src="js/code.js"></script>
+</body>
+
+</html>
