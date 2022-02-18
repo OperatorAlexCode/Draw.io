@@ -64,7 +64,7 @@ input[type = "checkbox"] {
     display: flex;
     flex-direction: column;
     background-color: grey;
-    width: 160px;
+    width: 180px;
     height: 100%;
     margin-left: 5px;
     margin-right: 20px;
