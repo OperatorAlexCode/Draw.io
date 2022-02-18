@@ -3,13 +3,20 @@
     --color: grey;
 }
 
+@font-face {
+    font-family: C64;
+    src: url("fonts/C64_Pro_Mono-STYLE.otf");
+}
+
+* {
+    font-family: C64;
+}
+
+/* Elements */
+
 table {
     background-color: black;
     border: 2px solid black;
-}
-
-.filled {
-    background-color: var(--color);
 }
 
 td {
@@ -17,6 +24,27 @@ td {
     height: var(--size);
     width: var(--size);
 }
+
+button {
+    color: black;
+    appearance: none;
+    border: 3px solid black;
+    padding: 4px;
+}
+
+input[type = "checkbox"] {
+    appearance: none;
+    background-color: white;
+    border: 2px solid black;
+    width: 30px;
+    height: 30px;
+}
+
+#preserve:checked {
+    background-color: black;
+}
+
+/* Classes */
 
 .row {
     display: flex;
@@ -28,11 +56,15 @@ td {
     flex-direction: column;
 }
 
+.filled {
+    background-color: var(--color);
+}
+
 .options {
     display: flex;
     flex-direction: column;
     background-color: grey;
-    width: 100px;
+    width: 160px;
     height: 100%;
     margin-left: 5px;
     margin-right: 20px;
